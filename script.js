@@ -1,0 +1,1 @@
+const sketchBlock = document.createElement('div');
