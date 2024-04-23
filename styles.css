@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sketch-container {
+    display: flex;
+    flex-flow: row wrap;
+    height: 288px;
+    width: 288px;
+}
+
+.block {
+    border: 1px solid black;
+    width: 16px;
+    height: 16px;
+}
