@@ -1,22 +1,45 @@
-body {
+/*body {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+*/
 #sketch-container {
     display: flex;
-    flex-flow: row wrap;
-    height: 288px;
-    width: 288px;
+    flex-flow: column;
+    height: 1000px;
+    width: 1000px;
+    border: 1px solid black;
+
 }
 
 .block {
     border: 1px solid gray;
-    width: 16px;
-    height: 16px;
+    box-sizing: border-box;
+    background-color: white;
+    flex-grow: 1;
+}
+
+.row {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
 }
 
 .hovering {
     background-color: #c7dbff;
+}
+
+.hidden {
+    display: none;
+}
+
+#popup {
+    background-color: #8da1c7; 
+    display: none;
+    height: 100px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
 }
