@@ -1,16 +1,21 @@
-/*body {
+body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-*/
+
 #sketch-container {
+    height: 1000px;
+    width: 1000px;
+    border: 1px solid black;
+}
+
+.grid-container {
     display: flex;
     flex-flow: column;
     height: 1000px;
     width: 1000px;
-    border: 1px solid black;
-
 }
 
 .block {
@@ -21,25 +26,23 @@
 }
 
 .row {
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
     flex-grow: 1;
 }
 
 .hovering {
-    background-color: #c7dbff;
+    background-color: #899ec4;
 }
 
 .hidden {
     display: none;
 }
 
-#popup {
-    background-color: #8da1c7; 
-    display: none;
-    height: 100px;
-    width: 300px;
-    justify-content: center;
-    align-items: center;
+button {
+    background-color: #c7dbff;
+    margin: 25px;
+    height: 75px;
+    width: 200px;
+    font-size: large;
 }
